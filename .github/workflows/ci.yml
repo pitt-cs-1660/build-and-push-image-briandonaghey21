@@ -21,7 +21,7 @@ jobs:
         name: Authenticate to GCP
         with:
           project_id: 'civil-willow-433922-t0' # update with your project ID
-          workload_identity_provider: 'projects/107157123215/locations/global/workloadIdentityPools/github/providers/my-repo' # update with your Workload Identity Pool
+          workload_identity_provider: 'projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo # update with your Workload Identity Pool
 
       # configure/login with docker
       - name: gcloud Configure Docker
@@ -39,7 +39,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: us-central1-docker.pkg.dev/civil-willow-433922-t0/assignment-3-pieline/node-demo:test
+          tags: us-central1-docker.pkg.dev/civil-willow-433922-t0/build-and-push-repo/node-demo:test
 
 # @note: you can use regular docker commands instead of the shared action
 #      - name: Build and Push Without Buildx
