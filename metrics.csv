@@ -1,0 +1,18 @@
+TimeSeries ID,workload_identity_federation/count.iam.googleapis.com/WorkloadIdentityPoolProvider.ALIGN_RATE.REDUCE_SUM.metric.type="iam.googleapis.com/workload_identity_federation/count" resource.type="iam.googleapis.com/WorkloadIdentityPoolProvider" metric.label."result"="success".60s.pool_id:github.project_id:civil-willow-433922-t0,workload_identity_federation/count.iam.googleapis.com/WorkloadIdentityPoolProvider.ALIGN_RATE.REDUCE_SUM.metric.type="iam.googleapis.com/workload_identity_federation/count" resource.type="iam.googleapis.com/WorkloadIdentityPoolProvider" metric.label."result"="success".60s.pool_id:githubpool.project_id:civil-willow-433922-t0
+pool_id,github,githubpool
+project_id,civil-willow-433922-t0,civil-willow-433922-t0
+Sat Nov 02 2024 16:10:00 GMT-0400 (Eastern Daylight Time),0.004611076851280855,undefined
+Sat Nov 02 2024 16:15:00 GMT-0400 (Eastern Daylight Time),0.00922215370256171,undefined
+Sat Nov 02 2024 16:20:00 GMT-0400 (Eastern Daylight Time),0.013333333333333334,undefined
+Sat Nov 02 2024 16:25:00 GMT-0400 (Eastern Daylight Time),0.0061667694461574355,undefined
+Sat Nov 02 2024 16:30:00 GMT-0400 (Eastern Daylight Time),0.013333333333333334,undefined
+Sat Nov 02 2024 16:40:00 GMT-0400 (Eastern Daylight Time),0.014611076851280855,undefined
+Sat Nov 02 2024 16:45:00 GMT-0400 (Eastern Daylight Time),0.015388923148719147,undefined
+Sat Nov 02 2024 16:50:00 GMT-0400 (Eastern Daylight Time),0.0033333333333333335,undefined
+Sat Nov 02 2024 16:55:00 GMT-0400 (Eastern Daylight Time),0.013333333333333334,undefined
+Sat Nov 02 2024 17:10:00 GMT-0400 (Eastern Daylight Time),0.014611076851280855,undefined
+Sat Nov 02 2024 17:15:00 GMT-0400 (Eastern Daylight Time),0.02538892314871915,undefined
+Sat Nov 02 2024 18:20:00 GMT-0400 (Eastern Daylight Time),undefined,0.013333333333333334
+Sat Nov 02 2024 18:35:00 GMT-0400 (Eastern Daylight Time),undefined,0.0028333249998611088
+Sat Nov 02 2024 18:40:00 GMT-0400 (Eastern Daylight Time),undefined,0.010500008333472225
+Sat Nov 02 2024 18:55:00 GMT-0400 (Eastern Daylight Time),undefined,0.013333333333333334
