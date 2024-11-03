@@ -1,0 +1,3735 @@
+[
+  {
+    "insertId": "1r0274zdp99w",
+    "jsonPayload": {
+      "reportGroups": [
+        "VPC_NETWORK"
+      ],
+      "id": "civil-willow-433922-t0/ip_utilization/6939196088046863201",
+      "location": "global",
+      "priority": "LOW",
+      "@type": "type.googleapis.com/google.cloud.networkanalyzer.logging.v1.Report",
+      "resourceName": "//compute.googleapis.com/projects/civil-willow-433922-t0",
+      "status": "ACTIVE",
+      "firstReportTime": "2024-09-17T19:27:40.309275063Z",
+      "ipUtilizationInfo": {
+        "subnetIpUtilization": [
+          {
+            "allocationRatio": 0.00024437927663734115,
+            "subnetUri": "//compute.googleapis.com/projects/civil-willow-433922-t0/regions/us-central1/subnetworks/default"
+          }
+        ]
+      },
+      "type": "INFO",
+      "causeCode": "IP_UTILIZATION_IP_ALLOCATION_SUMMARY"
+    },
+    "resource": {
+      "type": "networking.googleapis.com/Location",
+      "labels": {
+        "location": "global",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T19:27:40.191905829Z",
+    "logName": "projects/civil-willow-433922-t0/logs/networkanalyzer.googleapis.com%2Fanalyzer_reports",
+    "receiveTimestamp": "2024-11-02T19:27:41.655379402Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2601:547:780:8040:d2d:bba2:3519:4017",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T19:38:31.351857426Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/gitpool/providers/github",
+          "permission": "iam.workloadIdentityPoolProviders.update",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/gitpool/providers/github",
+      "request": {
+        "updateMask": "displayName,disabled,attributeMapping,attributeCondition,oidc.issuerUri,oidc.allowedAudiences,oidc.jwksJson",
+        "workloadIdentityPoolProvider": {
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          },
+          "disabled": false,
+          "displayName": "GitHub OIDC ",
+          "name": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/gitpool/providers/github",
+          "attributeCondition": "assertion.repository_owner == \"pitt-cs-1660-\"",
+          "attributeMapping": {
+            "google.subject": "assertion.sub"
+          }
+        },
+        "@type": "type.googleapis.com/google.iam.v1.UpdateWorkloadIdentityPoolProviderRequest"
+      }
+    },
+    "insertId": "zu0e39ddt7b",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T19:38:31.332569042Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/gitpool/providers/github/operations/bigarn77tg4qmegaytuyaaq000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T19:38:31.821658055Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/gitpool/providers/github",
+      "response": {
+        "name": "projects/107157123215/locations/global/workloadIdentityPools/gitpool/providers/github/operations/bigarn77tg4qmegaytuyaaq000000000",
+        "@type": "type.googleapis.com/google.longrunning.Operation"
+      }
+    },
+    "insertId": "-9y7nu6c1h6",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T19:38:31.539691Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/gitpool/providers/github/operations/bigarn77tg4qmegaytuyaaq000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T19:38:32.301461517Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 5,
+        "message": "Requested entity was not found."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.providers.create-oidc invocation-id/5c2ef6d602994cc7b1d61006f050a224 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T19:59:04.326898934Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github",
+          "permission": "iam.workloadIdentityPoolProviders.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github",
+      "request": {
+        "workloadIdentityPoolProviderId": "my-repo",
+        "workloadIdentityPoolProvider": {
+          "displayName": "My GitHub repo Provider",
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          },
+          "attributeMapping": {
+            "attribute.actor": "assertion.actor",
+            "attribute.repository_owner": "assertion.repository_owner",
+            "google.subject": "assertion.sub",
+            "attribute.repository": "assertion.repository"
+          },
+          "attributeCondition": "assertion.repository_owner == 'pitt-cs-1660'",
+          "disabled": false
+        },
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolProviderRequest",
+        "parent": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "1jt1t61dh05a",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T19:59:04.311792528Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T19:59:05.024005560Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/7d8c1590928b4857a2bef80253fb6cba environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T20:01:06.523279350Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global",
+      "request": {
+        "workloadIdentityPoolId": "github",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest",
+        "workloadIdentityPool": {
+          "displayName": "GitHub Workload Identity Pool",
+          "disabled": false
+        },
+        "parent": "projects/civil-willow-433922-t0/locations/global"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "1xxciardezd4",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "service": "iam.googleapis.com",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T20:01:06.512122371Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/github/operations/bifqra4ktk4qmega5w7hc00000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T20:01:08.070695370Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "resourceName": "projects/civil-willow-433922-t0/locations/global",
+      "response": {
+        "@type": "type.googleapis.com/google.longrunning.Operation",
+        "name": "projects/107157123215/locations/global/workloadIdentityPools/github/operations/bifqra4ktk4qmega5w7hc00000000000"
+      }
+    },
+    "insertId": "d1wl2oc1kw",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T20:01:07.239485Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/github/operations/bifqra4ktk4qmega5w7hc00000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T20:01:08.044968863Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.providers.create-oidc invocation-id/5354d562472b40af98fef54bdc9654a9 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T20:01:25.804779470Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github",
+          "permission": "iam.workloadIdentityPoolProviders.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github",
+      "request": {
+        "workloadIdentityPoolProvider": {
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          },
+          "disabled": false,
+          "attributeCondition": "assertion.repository_owner == 'pitt-cs-1660'",
+          "displayName": "My GitHub repo Provider",
+          "attributeMapping": {
+            "attribute.actor": "assertion.actor",
+            "attribute.repository": "assertion.repository",
+            "attribute.repository_owner": "assertion.repository_owner",
+            "google.subject": "assertion.sub"
+          }
+        },
+        "workloadIdentityPoolProviderId": "my-repo",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolProviderRequest",
+        "parent": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "o5ewspde579",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T20:01:25.787246708Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/github/providers/my-repo/operations/bigarfuktk4qmehi6dm2oai000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T20:01:26.628082940Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github",
+      "response": {
+        "name": "projects/107157123215/locations/global/workloadIdentityPools/github/providers/my-repo/operations/bigarfuktk4qmehi6dm2oai000000000",
+        "@type": "type.googleapis.com/google.longrunning.Operation"
+      }
+    },
+    "insertId": "-9yhorgc1v6",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider"
+      }
+    },
+    "timestamp": "2024-11-02T20:01:26.352762Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/github/providers/my-repo/operations/bigarfuktk4qmehi6dm2oai000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T20:01:26.761377376Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2601:547:780:8040:d2d:bba2:3519:4017",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T20:02:49.731754743Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github/providers/my-repo",
+          "permission": "iam.workloadIdentityPoolProviders.update",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github/providers/my-repo",
+      "request": {
+        "workloadIdentityPoolProvider": {
+          "attributeMapping": {
+            "attribute.repository_owner": "assertion.repository_owner",
+            "attribute.actor": "assertion.actor",
+            "google.subject": "assertion.sub",
+            "attribute.repository": "assertion.repository"
+          },
+          "disabled": false,
+          "name": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github/providers/my-repo",
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          },
+          "displayName": "GitHub Provider",
+          "attributeCondition": "assertion.repository_owner == 'pitt-cs-1660'"
+        },
+        "@type": "type.googleapis.com/google.iam.v1.UpdateWorkloadIdentityPoolProviderRequest",
+        "updateMask": "displayName,disabled,attributeMapping,attributeCondition,oidc.issuerUri,oidc.allowedAudiences,oidc.jwksJson"
+      }
+    },
+    "insertId": "s1nzdlddz8b",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "service": "iam.googleapis.com",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T20:02:49.710644259Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/github/providers/my-repo/operations/bigar2mktk4qmeeaz64kcay000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T20:02:50.240259865Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github/providers/my-repo",
+      "response": {
+        "@type": "type.googleapis.com/google.longrunning.Operation",
+        "name": "projects/107157123215/locations/global/workloadIdentityPools/github/providers/my-repo/operations/bigar2mktk4qmeeaz64kcay000000000"
+      }
+    },
+    "insertId": "-p8h1vmc2mh",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "project_id": "civil-willow-433922-t0",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T20:02:49.876756Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/github/providers/my-repo/operations/bigar2mktk4qmeeaz64kcay000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T20:02:50.203102485Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Identity Pool does not exist (projects/107157123215/locations/global/workloadIdentityPools/github-pool). Please check that you specified a valid resource name as returned in the `name` attribute in the configuration API."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/5c3e11a2f4fc4922a1cc2599b6cce84d environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T20:16:10.439611380Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline"
+      }
+    },
+    "insertId": "1ejz11hcqp3",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T20:16:10.429659682Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T20:16:11.187152526Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/cd9d2150b8b947f6b413c99f3291064f environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T20:17:59.026606645Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.iam.v1.Policy"
+      }
+    },
+    "insertId": "hij7vnd38ok",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "service": "artifactregistry.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T20:17:59.017496566Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T20:17:59.231821530Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/818aacf8f51449749c7cfee54a9b1232 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T20:32:36.402298360Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.iam.v1.Policy"
+      }
+    },
+    "insertId": "97t1jud35yh",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T20:32:36.395933940Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T20:32:36.984076072Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.projects.add-iam-policy-binding invocation-id/4b59c2d2e2114c60971b1e9447c78067 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "cloudresourcemanager.googleapis.com",
+      "methodName": "SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0",
+          "permission": "resourcemanager.projects.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "cloudresourcemanager.googleapis.com",
+            "name": "projects/civil-willow-433922-t0",
+            "type": "cloudresourcemanager.googleapis.com/Project"
+          },
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "projects/civil-willow-433922-t0",
+          "permission": "resourcemanager.projects.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "cloudresourcemanager.googleapis.com",
+            "name": "projects/civil-willow-433922-t0",
+            "type": "cloudresourcemanager.googleapis.com/Project"
+          },
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.iam.v1.logging.AuditData",
+        "policyDelta": {
+          "bindingDeltas": [
+            {
+              "action": "ADD",
+              "role": "roles/artifactregistry.admin",
+              "member": "user:briandonaghey21@gmail.com"
+            }
+          ]
+        }
+      },
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "civil-willow-433922-t0",
+        "policy": {
+          "etag": "BwYlsqWN74g=",
+          "bindings": [
+            {
+              "members": [
+                "serviceAccount:service-107157123215@gcp-sa-artifactregistry.iam.gserviceaccount.com"
+              ],
+              "role": "roles/artifactregistry.serviceAgent"
+            },
+            {
+              "members": [
+                "serviceAccount:service-107157123215@compute-system.iam.gserviceaccount.com"
+              ],
+              "role": "roles/compute.serviceAgent"
+            },
+            {
+              "members": [
+                "serviceAccount:107157123215-compute@developer.gserviceaccount.com",
+                "serviceAccount:107157123215@cloudservices.gserviceaccount.com"
+              ],
+              "role": "roles/editor"
+            },
+            {
+              "role": "roles/owner",
+              "members": [
+                "user:briandonaghey21@gmail.com"
+              ]
+            },
+            {
+              "members": [
+                "user:briandonaghey21@gmail.com"
+              ],
+              "role": "roles/artifactregistry.admin"
+            }
+          ]
+        }
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.iam.v1.Policy",
+        "bindings": [
+          {
+            "members": [
+              "user:briandonaghey21@gmail.com"
+            ],
+            "role": "roles/artifactregistry.admin"
+          },
+          {
+            "members": [
+              "serviceAccount:service-107157123215@gcp-sa-artifactregistry.iam.gserviceaccount.com"
+            ],
+            "role": "roles/artifactregistry.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:service-107157123215@compute-system.iam.gserviceaccount.com"
+            ],
+            "role": "roles/compute.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:107157123215-compute@developer.gserviceaccount.com",
+              "serviceAccount:107157123215@cloudservices.gserviceaccount.com"
+            ],
+            "role": "roles/editor"
+          },
+          {
+            "members": [
+              "user:briandonaghey21@gmail.com"
+            ],
+            "role": "roles/owner"
+          }
+        ],
+        "etag": "BwYl9B+EA3g="
+      }
+    },
+    "insertId": "c61cte3v6b2",
+    "resource": {
+      "type": "project",
+      "labels": {
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T20:44:50.532208Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T20:44:51.800805532Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Identity Pool does not exist (projects/107157123215/locations/global/workloadIdentityPools/github-pool). Please check that you specified a valid resource name as returned in the `name` attribute in the configuration API."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/e1d86c89c29840e2b973a232acd0d6eb environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T20:45:47.431831668Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "4hkpx2d3bo7",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T20:45:47.421365469Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T20:45:47.686368579Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/685d42e2c540496b9a5876ec9f976418 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T20:46:12.252420495Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.iam.v1.Policy"
+      }
+    },
+    "insertId": "1qgekuxd366h",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy"
+      }
+    },
+    "timestamp": "2024-11-02T20:46:12.245856106Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T20:46:12.765587602Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Identity Pool does not exist (projects/107157123215/locations/global/workloadIdentityPools/GitHub Provider). Please check that you specified a valid resource name as returned in the `name` attribute in the configuration API."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/12821d59230542b08bb63cdb75e030cf environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T20:55:30.151504717Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "1mksotkcq2l",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "service": "artifactregistry.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T20:55:30.142841206Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T20:55:31.122532857Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/9536314f15e44c86a14197533fed9167 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T20:57:32.723967178Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.iam.v1.Policy"
+      }
+    },
+    "insertId": "yg7fpxd19in",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T20:57:32.713334599Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T20:57:33.765520948Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/564d5640584f4d63bf0c0a9282c7cce8 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:09:32.943688733Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.iam.v1.Policy"
+      }
+    },
+    "insertId": "12l4feocrci",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "service": "artifactregistry.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T21:09:32.931848104Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:09:34.086778645Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/a79f0118565a451d8809ecf8a3df8216 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:11:05.623807957Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/assignment-3-pieline",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.iam.v1.Policy"
+      }
+    },
+    "insertId": "rryfpgc3cy",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "civil-willow-433922-t0",
+        "service": "artifactregistry.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T21:11:05.614074898Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:11:06.618307436Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.create invocation-id/994e59fd47cd476fb1bcfd695f7865f8 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:20:36.056740478Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1",
+          "permission": "artifactregistry.repositories.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1",
+      "request": {
+        "repositoryId": "my-repo",
+        "repository": {
+          "format": "DOCKER",
+          "name": "projects/civil-willow-433922-t0/locations/us-central1/repositories/my-repo"
+        },
+        "@type": "type.googleapis.com/google.devtools.artifactregistry.v1.CreateRepositoryRequest",
+        "parent": "projects/civil-willow-433922-t0/locations/us-central1"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      }
+    },
+    "insertId": "6zlmqbd1mnb",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository",
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T21:20:36.046039006Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/civil-willow-433922-t0/locations/us-central1/operations/9b086eed-eb1a-4de3-bcad-2298c8683f4b",
+      "producer": "artifactregistry.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T21:20:36.568861357Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository",
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/my-repo",
+      "response": {
+        "format": "DOCKER",
+        "sbomConfig": {},
+        "name": "projects/civil-willow-433922-t0/locations/us-central1/repositories/my-repo",
+        "mode": "STANDARD_REPOSITORY",
+        "description": "Repository for Docker images",
+        "vulnerabilityScanningConfig": {
+          "lastEnableTime": "2024-11-02T21:20:36.067307792Z"
+        },
+        "@type": "type.googleapis.com/google.protobuf.Any"
+      }
+    },
+    "insertId": "50k0fqd8dx2",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T21:20:36.900950012Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/civil-willow-433922-t0/locations/us-central1/operations/9b086eed-eb1a-4de3-bcad-2298c8683f4b",
+      "producer": "artifactregistry.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T21:20:37.625471202Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.create invocation-id/56dff97718f54027a3037b131109404e environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:25:07.174456048Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1",
+          "permission": "artifactregistry.repositories.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1",
+      "request": {
+        "@type": "type.googleapis.com/google.devtools.artifactregistry.v1.CreateRepositoryRequest",
+        "repositoryId": "build-and-push-repo",
+        "repository": {
+          "name": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "format": "DOCKER"
+        },
+        "parent": "projects/civil-willow-433922-t0/locations/us-central1"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      }
+    },
+    "insertId": "1ig5czyd15ev",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository"
+      }
+    },
+    "timestamp": "2024-11-02T21:25:07.166564199Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/civil-willow-433922-t0/locations/us-central1/operations/1aa54fb6-7922-4565-ac8f-cc3fadf89b0b",
+      "producer": "artifactregistry.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T21:25:07.374519330Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository",
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "response": {
+        "vulnerabilityScanningConfig": {
+          "lastEnableTime": "2024-11-02T21:25:07.185409074Z"
+        },
+        "sbomConfig": {},
+        "format": "DOCKER",
+        "mode": "STANDARD_REPOSITORY",
+        "name": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+        "@type": "type.googleapis.com/google.protobuf.Any",
+        "description": "Repository for Docker images"
+      }
+    },
+    "insertId": "o513e0c3vw",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository"
+      }
+    },
+    "timestamp": "2024-11-02T21:25:07.775226803Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/civil-willow-433922-t0/locations/us-central1/operations/1aa54fb6-7922-4565-ac8f-cc3fadf89b0b",
+      "producer": "artifactregistry.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T21:25:08.380809223Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 6,
+        "message": "Requested entity already exists"
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/1c8b41e4444a4ad29825c38628254820 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:26:16.346880979Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global",
+      "request": {
+        "workloadIdentityPoolId": "github",
+        "workloadIdentityPool": {
+          "disabled": false,
+          "displayName": "GitHub Actions Pool"
+        },
+        "parent": "projects/civil-willow-433922-t0/locations/global",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "17clz00dgfph",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T21:26:16.336856436Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:26:16.960419460Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 5,
+        "message": "Requested entity was not found."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.delete invocation-id/5ecd4e13222946abaf220d84e71dbba5 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:26:55.252516730Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.DeleteWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github-pool",
+          "permission": "iam.workloadIdentityPools.delete",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github-pool",
+      "request": {
+        "name": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github-pool",
+        "@type": "type.googleapis.com/google.iam.v1.DeleteWorkloadIdentityPoolRequest"
+      }
+    },
+    "insertId": "1jt1t61dha2p",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.DeleteWorkloadIdentityPool",
+        "project_id": "civil-willow-433922-t0",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T21:26:55.238566761Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:26:55.587271526Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.delete invocation-id/a005d0d5cf064f8c94cf53736d900380 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:27:09.312347864Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.DeleteWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github",
+          "permission": "iam.workloadIdentityPools.delete",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github",
+      "request": {
+        "name": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github",
+        "@type": "type.googleapis.com/google.iam.v1.DeleteWorkloadIdentityPoolRequest"
+      }
+    },
+    "insertId": "1xxciardfb4l",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.DeleteWorkloadIdentityPool",
+        "service": "iam.googleapis.com",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T21:27:09.295891954Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/github/operations/bigarlnstk4qmehq2hijaay000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T21:27:10.503793175Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.DeleteWorkloadIdentityPool",
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github",
+      "response": {
+        "name": "projects/107157123215/locations/global/workloadIdentityPools/github/operations/bigarlnstk4qmehq2hijaay000000000",
+        "@type": "type.googleapis.com/google.longrunning.Operation"
+      }
+    },
+    "insertId": "ibre3dc1lk",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.iam.v1.WorkloadIdentityPools.DeleteWorkloadIdentityPool",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T21:27:09.841666Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/github/operations/bigarlnstk4qmehq2hijaay000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T21:27:10.596969488Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 6,
+        "message": "Requested entity already exists"
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/272db64827ee4565b036dca55d723240 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:27:16.630001030Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global",
+      "request": {
+        "workloadIdentityPool": {
+          "displayName": "GitHub Actions Pool",
+          "disabled": false
+        },
+        "parent": "projects/civil-willow-433922-t0/locations/global",
+        "workloadIdentityPoolId": "github",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "1xxciardfb56",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T21:27:16.620640130Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:27:17.500250358Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 6,
+        "message": "Requested entity already exists"
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/49f6a27bb6ef48adbf817b122472a112 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:27:55.084748808Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest",
+        "workloadIdentityPoolId": "github",
+        "parent": "projects/civil-willow-433922-t0/locations/global",
+        "workloadIdentityPool": {
+          "displayName": "GitHub Actions Pool",
+          "disabled": false
+        }
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "1y90j3pdhir0",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T21:27:55.075032307Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:27:55.759276106Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 6,
+        "message": "Requested entity already exists"
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/471bdda1b35d47b383cfd7962e756c43 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:28:33.869873712Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global",
+      "request": {
+        "workloadIdentityPool": {
+          "displayName": "GitHub Actions Pool",
+          "disabled": false
+        },
+        "parent": "projects/civil-willow-433922-t0/locations/global",
+        "workloadIdentityPoolId": "github",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "qo5xghdhhnq",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T21:28:33.860025333Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:28:34.879504798Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 6,
+        "message": "Requested entity already exists"
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/0235caf698574ab4b1994b036eb35066 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:28:44.320407201Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global",
+      "request": {
+        "workloadIdentityPool": {
+          "displayName": "GitHub Actions Pool",
+          "disabled": false
+        },
+        "parent": "projects/civil-willow-433922-t0/locations/global",
+        "workloadIdentityPoolId": "github",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "6xs7wvdeu18",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "service": "iam.googleapis.com",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T21:28:44.313525483Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:28:44.836448069Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 6,
+        "message": "Requested entity already exists"
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/b5aa5db0925d4fb199f797afa1993db3 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:29:29.606035849Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global",
+      "request": {
+        "workloadIdentityPool": {
+          "displayName": "GitHub Actions Pool",
+          "disabled": false
+        },
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest",
+        "parent": "projects/civil-willow-433922-t0/locations/global",
+        "workloadIdentityPoolId": "github"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "1xxciardfbf4",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "project_id": "civil-willow-433922-t0",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T21:29:29.595903279Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:29:30.513652324Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 6,
+        "message": "Requested entity already exists"
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/18a60992a642424086944e4c241acf13 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:30:48.714617439Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest",
+        "parent": "projects/civil-willow-433922-t0/locations/global",
+        "workloadIdentityPoolId": "github",
+        "workloadIdentityPool": {
+          "displayName": "GitHub Actions Pool",
+          "disabled": false
+        }
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "1jt1t61dhaiq",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "service": "iam.googleapis.com",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T21:30:48.706845450Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:30:49.611482209Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/ce4c73f4f7664d6fb9a15d048029471d environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:31:00.888024018Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global",
+      "request": {
+        "workloadIdentityPoolId": "githubpool",
+        "workloadIdentityPool": {
+          "disabled": false,
+          "displayName": "GitHub Actions Pool"
+        },
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest",
+        "parent": "projects/civil-willow-433922-t0/locations/global"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "1xxciardfbnj",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool"
+      }
+    },
+    "timestamp": "2024-11-02T21:31:00.880696517Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/githubpool/operations/bigarfnutk4qmehixwbkaai000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T21:31:01.520752620Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "resourceName": "projects/civil-willow-433922-t0/locations/global",
+      "response": {
+        "@type": "type.googleapis.com/google.longrunning.Operation",
+        "name": "projects/107157123215/locations/global/workloadIdentityPools/githubpool/operations/bigarfnutk4qmehixwbkaai000000000"
+      }
+    },
+    "insertId": "yes6psc12q",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool"
+      }
+    },
+    "timestamp": "2024-11-02T21:31:01.336531Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/githubpool/operations/bigarfnutk4qmehixwbkaai000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T21:31:01.490483146Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "The WorkloadIdentityPool's display name must be less than or equal to 32 characters."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/2978479e3b714ba6bbc9865468fd0e70 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:31:38.066941177Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest",
+        "parent": "projects/civil-willow-433922-t0/locations/global",
+        "workloadIdentityPoolId": "github",
+        "workloadIdentityPool": {
+          "displayName": "GitHub Actions Poolqweqweqweqweqweq",
+          "disabled": false
+        }
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "zu0e39de6z6",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T21:31:38.058038236Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:31:38.584517994Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.providers.create-oidc invocation-id/e23ab0d0d73148f6a24ec1291de4b504 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:37:55.942342750Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool",
+          "permission": "iam.workloadIdentityPoolProviders.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolProviderRequest",
+        "parent": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool",
+        "workloadIdentityPoolProviderId": "my-repo",
+        "workloadIdentityPoolProvider": {
+          "attributeMapping": {
+            "attribute.actor": "assertion.actor",
+            "attribute.repository_owner": "assertion.repository_owner",
+            "google.subject": "assertion.sub",
+            "attribute.repository": "assertion.repository"
+          },
+          "attributeCondition": "assertion.repository_owner =='pitt-cs1660'",
+          "displayName": "My GitHub repo Provider",
+          "disabled": false,
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          }
+        }
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "s1nzdldebpo",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+        "project_id": "civil-willow-433922-t0",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T21:37:55.924859947Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/operations/bigarnfxtk4qmega7ldnyai000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T21:37:57.342034517Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool",
+      "response": {
+        "name": "projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/operations/bigarnfxtk4qmega7ldnyai000000000",
+        "@type": "type.googleapis.com/google.longrunning.Operation"
+      }
+    },
+    "insertId": "yz7km8c1vv",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider"
+      }
+    },
+    "timestamp": "2024-11-02T21:37:56.463560Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/operations/bigarnfxtk4qmega7ldnyai000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T21:37:56.653140908Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/33272713e49840f1806700b5e78b818f environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:52:45.415265034Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.iam.v1.Policy"
+      }
+    },
+    "insertId": "lz3om0cgc7",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy"
+      }
+    },
+    "timestamp": "2024-11-02T21:52:45.405709444Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:52:45.763564783Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid attribute condition. [ERROR 'ERROR: <expression>:1:30: undeclared reference to 'pitt' (in container '')\n | assertion.repository_owner ==pitt-cs1660\n | .............................^' at 29, ERROR 'ERROR: <expression>:1:35: undeclared reference to 'cs1660' (in container '')\n | assertion.repository_owner ==pitt-cs1660\n | ..................................^' at 34]"
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2601:547:780:8040:d2d:bba2:3519:4017",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:01:51.609543263Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+          "permission": "iam.workloadIdentityPoolProviders.update",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+      "request": {
+        "workloadIdentityPoolProvider": {
+          "name": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+          "attributeMapping": {
+            "attribute.actor": "assertion.actor",
+            "attribute.repository_owner": "assertion.repository_owner",
+            "google.subject": "assertion.sub",
+            "attribute.repository": "assertion.repository"
+          },
+          "disabled": false,
+          "attributeCondition": "assertion.repository_owner ==pitt-cs1660",
+          "displayName": "My GitHub repo Provider",
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          }
+        },
+        "updateMask": "displayName,disabled,attributeMapping,attributeCondition,oidc.issuerUri,oidc.allowedAudiences,oidc.jwksJson",
+        "@type": "type.googleapis.com/google.iam.v1.UpdateWorkloadIdentityPoolProviderRequest"
+      }
+    },
+    "insertId": "5uomi9dgxoz",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T22:01:51.592632202Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:01:52.230121206Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid attribute condition. [ERROR 'ERROR: <expression>:1:30: undeclared reference to 'pitt' (in container '')\n | assertion.repository_owner ==pitt-cs1660\n | .............................^' at 29, ERROR 'ERROR: <expression>:1:35: undeclared reference to 'cs1660' (in container '')\n | assertion.repository_owner ==pitt-cs1660\n | ..................................^' at 34]"
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2601:547:780:8040:d2d:bba2:3519:4017",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:02:05.501997862Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+          "permission": "iam.workloadIdentityPoolProviders.update",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+      "request": {
+        "updateMask": "displayName,disabled,attributeMapping,attributeCondition,oidc.issuerUri,oidc.allowedAudiences,oidc.jwksJson",
+        "@type": "type.googleapis.com/google.iam.v1.UpdateWorkloadIdentityPoolProviderRequest",
+        "workloadIdentityPoolProvider": {
+          "disabled": false,
+          "attributeMapping": {
+            "google.subject": "assertion.sub",
+            "attribute.repository": "assertion.repository",
+            "attribute.repository_owner": "assertion.repository_owner",
+            "attribute.actor": "assertion.actor"
+          },
+          "attributeCondition": "assertion.repository_owner ==pitt-cs1660",
+          "name": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+          "displayName": "My GitHub repo Provider",
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          }
+        }
+      }
+    },
+    "insertId": "6xs7wvdey95",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "project_id": "civil-willow-433922-t0",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T22:02:05.486608285Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:02:06.073218129Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid attribute condition. [ERROR 'ERROR: <expression>:1:30: undeclared reference to 'pitt' (in container '')\n | assertion.repository_owner ==pitt-cs1660\n | .............................^' at 29, ERROR 'ERROR: <expression>:1:35: undeclared reference to 'cs1660' (in container '')\n | assertion.repository_owner ==pitt-cs1660\n | ..................................^' at 34]"
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2601:547:780:8040:d2d:bba2:3519:4017",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:02:06.377006023Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+          "permission": "iam.workloadIdentityPoolProviders.update",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.UpdateWorkloadIdentityPoolProviderRequest",
+        "workloadIdentityPoolProvider": {
+          "name": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+          "disabled": false,
+          "attributeMapping": {
+            "attribute.actor": "assertion.actor",
+            "attribute.repository": "assertion.repository",
+            "google.subject": "assertion.sub",
+            "attribute.repository_owner": "assertion.repository_owner"
+          },
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          },
+          "displayName": "My GitHub repo Provider",
+          "attributeCondition": "assertion.repository_owner ==pitt-cs1660"
+        },
+        "updateMask": "displayName,disabled,attributeMapping,attributeCondition,oidc.issuerUri,oidc.allowedAudiences,oidc.jwksJson"
+      }
+    },
+    "insertId": "qo5xghdhlix",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "service": "iam.googleapis.com",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T22:02:06.361486005Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:02:07.153559568Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2601:547:780:8040:d2d:bba2:3519:4017",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:02:17.774606857Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+          "permission": "iam.workloadIdentityPoolProviders.update",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+      "request": {
+        "updateMask": "displayName,disabled,attributeMapping,attributeCondition,oidc.issuerUri,oidc.allowedAudiences,oidc.jwksJson",
+        "workloadIdentityPoolProvider": {
+          "disabled": false,
+          "attributeCondition": "assertion.repository_owner ==\"pitt-cs1660\"",
+          "name": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+          "displayName": "My GitHub repo Provider",
+          "attributeMapping": {
+            "google.subject": "assertion.sub",
+            "attribute.actor": "assertion.actor",
+            "attribute.repository": "assertion.repository",
+            "attribute.repository_owner": "assertion.repository_owner"
+          },
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          }
+        },
+        "@type": "type.googleapis.com/google.iam.v1.UpdateWorkloadIdentityPoolProviderRequest"
+      }
+    },
+    "insertId": "1xxciardffsp",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider"
+      }
+    },
+    "timestamp": "2024-11-02T22:02:17.759701209Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/operations/bifqr2wctk4qmeeax2dvq00000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T22:02:18.674933700Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+      "response": {
+        "name": "projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/operations/bifqr2wctk4qmeeax2dvq00000000000",
+        "@type": "type.googleapis.com/google.longrunning.Operation"
+      }
+    },
+    "insertId": "jg271yc1n7",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T22:02:18.185715Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/operations/bifqr2wctk4qmeeax2dvq00000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T22:02:19.101442726Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/601366e9e7da40418616c59066576161 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:07:42.736994755Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo"
+      }
+    },
+    "insertId": "z9zit9ctzz",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T22:07:42.727898516Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:07:43.567392323Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/675a5871cb644bfb92cf888c82578359 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:08:29.420583954Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.iam.v1.Policy"
+      }
+    },
+    "insertId": "6zdz80d38ic",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "civil-willow-433922-t0",
+        "service": "artifactregistry.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T22:08:29.411456085Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:08:30.472517443Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/ff92eaa7922948ba8357f1e575069ee6 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:09:07.319858231Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.iam.v1.Policy"
+      }
+    },
+    "insertId": "yg7fpxd19zt",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "service": "artifactregistry.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T22:09:07.310879173Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:09:08.294195737Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 5,
+        "message": "Requested entity was not found."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.providers.create-oidc invocation-id/ad603036b5294d3d9b917f7dbf0e0e2c environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:12:52.621036502Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github",
+          "permission": "iam.workloadIdentityPoolProviders.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github",
+      "request": {
+        "workloadIdentityPoolProvider": {
+          "displayName": "My GitHub repo Provider",
+          "attributeCondition": "assertion.repository_owner == 'pitt-cs-1660'",
+          "disabled": false,
+          "attributeMapping": {
+            "attribute.repository_owner": "assertion.repository_owner",
+            "attribute.actor": "assertion.actor",
+            "google.subject": "assertion.sub",
+            "attribute.repository": "assertion.repository"
+          },
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          }
+        },
+        "workloadIdentityPoolProviderId": "my-repo",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolProviderRequest",
+        "parent": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "s1nzdldefv8",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider"
+      }
+    },
+    "timestamp": "2024-11-02T22:12:52.601816001Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:12:53.155750698Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 5,
+        "message": "Requested entity was not found."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.providers.create-oidc invocation-id/d30bfc90a3394390b9d717e522e73c01 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:12:57.320223772Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github",
+          "permission": "iam.workloadIdentityPoolProviders.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github",
+      "request": {
+        "parent": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/github",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolProviderRequest",
+        "workloadIdentityPoolProviderId": "my-repo",
+        "workloadIdentityPoolProvider": {
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          },
+          "attributeCondition": "assertion.repository_owner == 'pitt-cs-1660'",
+          "displayName": "My GitHub repo Provider",
+          "attributeMapping": {
+            "attribute.repository": "assertion.repository",
+            "google.subject": "assertion.sub",
+            "attribute.repository_owner": "assertion.repository_owner",
+            "attribute.actor": "assertion.actor"
+          },
+          "disabled": false
+        }
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "n1ylxfdgy6n",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T22:12:57.305598664Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:12:58.257210454Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.providers.update-oidc invocation-id/1c8cecb359314d379676ff1d294bfe78 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:14:46.674529424Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+          "permission": "iam.workloadIdentityPoolProviders.update",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+      "request": {
+        "updateMask": "attributeCondition",
+        "@type": "type.googleapis.com/google.iam.v1.UpdateWorkloadIdentityPoolProviderRequest",
+        "workloadIdentityPoolProvider": {
+          "name": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+          "disabled": false,
+          "attributeCondition": "assertion.repository == 'briandonaghey21/build-and-push-image-briandonaghey21'"
+        }
+      }
+    },
+    "insertId": "17clz00dgkti",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T22:14:46.659221860Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/operations/bifqrv6itk4qmefyzw5ra00000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T22:14:47.112927569Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+      "response": {
+        "@type": "type.googleapis.com/google.longrunning.Operation",
+        "name": "projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/operations/bifqrv6itk4qmefyzw5ra00000000000"
+      }
+    },
+    "insertId": "-r5rvktcu2h",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "project_id": "civil-willow-433922-t0",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T22:14:47.035240Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/operations/bifqrv6itk4qmefyzw5ra00000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T22:14:47.686133578Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2601:547:780:8040:d2d:bba2:3519:4017",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:16:35.635464980Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+          "permission": "iam.workloadIdentityPoolProviders.update",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.UpdateWorkloadIdentityPoolProviderRequest",
+        "updateMask": "displayName,disabled,attributeMapping,attributeCondition,oidc.issuerUri,oidc.allowedAudiences,oidc.jwksJson",
+        "workloadIdentityPoolProvider": {
+          "disabled": false,
+          "attributeMapping": {
+            "attribute.repository": "assertion.repository",
+            "attribute.repository_owner": "assertion.repository_owner",
+            "google.subject": "assertion.sub",
+            "attribute.actor": "assertion.actor"
+          },
+          "name": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+          "displayName": "My GitHub repo Provider",
+          "attributeCondition": "assertion.repository_owner == 'pitt-cs-1660'",
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          }
+        }
+      }
+    },
+    "insertId": "6xs7wvdezyl",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider"
+      }
+    },
+    "timestamp": "2024-11-02T22:16:35.612027647Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/operations/bigarq6jtk4qmeea6t2pwaq000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T22:16:36.403084740Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "resourceName": "projects/civil-willow-433922-t0/locations/global/workloadIdentityPools/githubpool/providers/my-repo",
+      "response": {
+        "@type": "type.googleapis.com/google.longrunning.Operation",
+        "name": "projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/operations/bigarq6jtk4qmeea6t2pwaq000000000"
+      }
+    },
+    "insertId": "-frui8rc1mm",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T22:16:35.797748Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/operations/bigarq6jtk4qmeea6t2pwaq000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T22:16:35.930969670Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/0124ecfd71054d249d7e2f76fdd1ca86 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:23:39.389858080Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "yg7fpxd1a3a",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy"
+      }
+    },
+    "timestamp": "2024-11-02T22:23:39.383564681Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:23:40.426754286Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/6756423d66e94f789aa4bd719e842265 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:23:56.427489824Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "5kazzdd391q",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T22:23:56.416170904Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:23:57.159320556Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/attribute.repository/briandonaghey21/build-and-push-image-briandonaghey21)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/a37e9df7fd1c4d23827c08d92fe6943f environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:40:35.519005537Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo"
+      }
+    },
+    "insertId": "1xdwpsjcreb",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy"
+      }
+    },
+    "timestamp": "2024-11-02T22:40:35.510679437Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:40:35.928694Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/attribute.repository/briandonaghey21/build-and-push-image-briandonaghey21)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/b9ab1f9eb1d344608258235dcfc23e1f environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:41:27.620642152Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo"
+      }
+    },
+    "insertId": "18g50r8d3dnb",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy"
+      }
+    },
+    "timestamp": "2024-11-02T22:41:27.612484002Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:41:27.918745958Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/attributes.repository/briandonaghey21/build-and-push-image-briandonaghey21)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/8e1b7d491e9f40a3a6fed5176c80ac69 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:44:01.045744944Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo"
+      }
+    },
+    "insertId": "1pmjk2hd39xv",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T22:44:01.035991455Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:44:01.554394760Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/attribute.repository/briandonaghey21/build-and-push-image-briandonaghey21)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/f57defda2ddb4e32aaa3a9a6fe625cf6 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:44:22.102050742Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "4hby9hd3dg3",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "civil-willow-433922-t0",
+        "service": "artifactregistry.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T22:44:22.090817262Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:44:22.302851448Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/attribute.repository/briandonaghey21/build-and-push-image-briandonaghey21)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/9f2dfcb38d444357b9ca3cf6fdefa683 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:45:29.121202060Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "6zlmqbd1n89",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy"
+      }
+    },
+    "timestamp": "2024-11-02T22:45:29.114230468Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:45:29.166264006Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/attribute.repository/briandonaghey21)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/f4c284563bd54f1cbfe49de6d00633bd environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:47:06.036724854Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "1nyr2pxcqsm",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "service": "artifactregistry.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T22:47:06.028375604Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:47:06.652425573Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "The member principalSet://iam.googleapis.com/projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/attribute.repository/pitt-cs-1660\n/\nbuild-and-push-image-briandonaghey21 is of an unknown type. Please set a valid type prefix for the member."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/1e41a488b5d442f98e34975d51d9549c environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:47:43.430943912Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "1qgekuxd3707",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T22:47:43.422419813Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:47:43.924311090Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/attribute.repository/briandonaghey21)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/f67a6fb04b0548ada1dc19ef6b679f43 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:47:57.484732797Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo"
+      }
+    },
+    "insertId": "1lhtex1d3eql",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy"
+      }
+    },
+    "timestamp": "2024-11-02T22:47:57.453500835Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:47:58.039501893Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "The member principalSet://iam.googleapis.com/projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/attribute.repository/pitt-cs-1660\n/\nbuild-and-push-image-briandonaghey21 is of an unknown type. Please set a valid type prefix for the member."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/0d3012c796de4224a1d66c9b7b0a3e48 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:48:29.126115171Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "9g2t0qd4whe",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "service": "artifactregistry.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T22:48:29.114612492Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:48:29.652322958Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/attribute.repository/pitt-cs-1660/build-and-push-image-briandonaghey21)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/9356bd7fad524880a2fa357d15c3571f environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:49:16.963732951Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "z9zit9cual",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy"
+      }
+    },
+    "timestamp": "2024-11-02T22:49:16.956053672Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:49:17.829206941Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/107157123215/locations/global/workloadIdentityPools/githubpool/providers/my-repo/attribute.repository/briandonaghey21/build-and-push-image-briandonaghey21)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/1e7be7515c3846e2875deab53c0850dd environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:51:12.673190307Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "1qgekuxd370z",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "civil-willow-433922-t0"
+      }
+    },
+    "timestamp": "2024-11-02T22:51:12.657928320Z",
+    "severity": "ERROR",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:51:12.979576148Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "briandonaghey21@gmail.com",
+        "principalSubject": "user:briandonaghey21@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.198.135",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/cfaece8239ed49b281a9c5b7b2200099 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T22:51:58.324518218Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+      "request": {
+        "resource": "projects/civil-willow-433922-t0/locations/us-central1/repositories/build-and-push-repo",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.iam.v1.Policy"
+      }
+    },
+    "insertId": "ufycncrow",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "civil-willow-433922-t0",
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy"
+      }
+    },
+    "timestamp": "2024-11-02T22:51:58.316625709Z",
+    "severity": "NOTICE",
+    "logName": "projects/civil-willow-433922-t0/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T22:51:59.097303609Z"
+  }
+]
